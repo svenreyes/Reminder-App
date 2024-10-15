@@ -14,15 +14,93 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #D2B48C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(168, 111, 74);
+  font-family: 'Monaco';
 }
+
+form {
+  background-color: #c6a67d;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input {
+  width: 60%;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #9b734e;
+  color: rgb(91, 72, 52);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Monaco';
+}
+.input-field {
+  background-color: #a2824fce;
+  border: 2px solid #926213;
+  border-radius: 4px;
+  padding: 5px;
+}
+.reminders-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.reminders-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reminder-box {
+  background-color: #e6d5b8;
+  border: 1px solid #c6a67d;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(139, 69, 19, 0.1);
+  padding: 15px 35px 15px 15px;
+  position: relative;
+}
+
+.reminder-box h3 {
+  margin-top: 0;
+  color: #8b4513;
+}
+
+.reminder-box p {
+  margin-bottom: 0;
+  color: #a0522d;
+}
+.delete-button {
+  background-color: #8b4513;
+  color: #e6d5b8;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.5em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.delete-button:hover {
+  background-color: #a0522d;
+}
+
 
 .App-link {
   color: #61dafb;
